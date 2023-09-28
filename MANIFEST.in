@@ -7,8 +7,8 @@ include README.md
 recursive-include gpiod *.py
 recursive-include tests *.py
 
-recursive-include gpiod/ext *.c
-recursive-include gpiod/ext *.h
+recursive-include gpiod *.cpp
+recursive-include gpiod *.hpp
 
 recursive-include tests/gpiosim *.c
 recursive-include tests/procname *.c
@@ -16,3 +16,6 @@ recursive-include tests/procname *.c
 recursive-include libgpiod/lib *.c
 recursive-include libgpiod/lib *.h
 recursive-include libgpiod/include *.h
+
+include libgpiod/NEWS
+include libgpiod/bindings/python/gpiomodule.c
